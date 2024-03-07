@@ -1,10 +1,11 @@
 
 import './App.css'
-import { BiChevronUp } from "react-icons/bi"
+import { BiChevronUp, BiChevronDown } from "react-icons/bi"
 import { BiSolidHelpCircle } from "react-icons/bi"
 
 function App() {
- 
+
+  
 
   return (
     <>
@@ -22,17 +23,30 @@ function App() {
         </div>
 
         <div className='flex justify-center text-stone-400 hover:text-stone-50 m-5'>
+          
+
           <label htmlFor="variable">Variable:</label>
           <input type="checkbox" name='variable' className='bg-neutral-500' />
-          
-          <label htmlFor="min">Min:</label>
-          <input type="number" name='min' value='0' className='bg-neutral-500 rounded-md h-8 w-20' />
 
-          <label htmlFor="max">Max:</label>
-          <input type="number" name='max' value='2' className='bg-neutral-500 rounded-md h-8 w-20' />
+
+          <div className="quantity">
+            <label htmlFor="min">Min:</label>
+            <input type="number" name='min' value='0' className='bg-neutral-500 rounded-md h-8 w-20' />
+            <button className="quantity-button quantity-up"><BiChevronUp /></button>
+            <button className="quantity-button quantity-down"><BiChevronDown /></button>
+          </div>
+
+          <div className="quantity">
+            <label htmlFor="max">Max:</label>
+            <input type="number" name='max' value='2' className='bg-neutral-500 rounded-md h-8 w-20' />
+            <button className="quantity-button quantity-up"><BiChevronUp /></button>
+            <button className="quantity-button quantity-down"><BiChevronDown /></button>
+          </div>
+
         </div>
 
         <button className='bg-neutral-500 p-1 rounded-3xl'>Smart Reset</button>
+
       </div>
     </>
   )
