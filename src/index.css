@@ -22,7 +22,7 @@
   }
   input[type=checkbox] :checked, input[type=checkbox] :hover, input[type=checkbox] :focus {
     background-color: #333;
-
+   
   }
   div label{margin-right: 8px;}
   .quantity {
