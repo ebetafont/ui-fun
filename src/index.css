@@ -13,17 +13,6 @@
     -moz-appearance: textfield;
   }
     
-  input[type=checkbox] {
-    
-    background-color: #333;
-    height: 20px;
-    width: 25px;
-
-  }
-  input[type=checkbox] :checked, input[type=checkbox] :hover, input[type=checkbox] :focus {
-    background-color: #333;
-   
-  }
   div label{margin-right: 8px;}
   .quantity {
     /*@apply*/

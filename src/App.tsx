@@ -22,13 +22,13 @@ function App() {
         
         <div className='flex justify-between'>
           <h2>EXTRUSION</h2>
-          <div className='flex'><BiSolidHelpCircle className='text-stone-200 text-2xl' /><BiChevronUp className='text-4xl -mt-2' /></div>
+          <div className='flex'><BiSolidHelpCircle className='text-stone-200 text-2xl rounded-full' /><BiChevronUp className='text-4xl -mt-2' /></div>
         </div>  
         
         <div className='flex gap-10 text-stone-400 hover:text-stone-50 pl-2 m-5'> 
           <div className="primer">
             <label htmlFor="linear">Linear:</label>
-            <input type="checkbox" name='linear' className='p-10' />
+            <input type="checkbox" name='linear' className='bg-neutral-700 border-neutral-700 h-6 w-6 accent-neutral-700 rounded-3xl' />
           </div>
           <div className="quantity">
             <input type="number" value='3' id='input-linear' className='bg-neutral-700 hover:bg-neutral-600 rounded-md h-8 w-20' />
@@ -41,7 +41,7 @@ function App() {
           
           <div className="primer">
             <label htmlFor="variable">Variable:</label>
-            <input type="checkbox" name='variable' className='bg-neutral-500' />
+            <input type="checkbox" name='variable' className='bg-neutral-700 border-red-700 h-6 w-6 accent-neutral-700 rounded-full' />
           </div>
 
           <div className="quantity">
